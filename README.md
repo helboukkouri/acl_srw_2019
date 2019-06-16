@@ -12,6 +12,35 @@ Then activate it:
 
 ## Steps for reproducing the experiments
 
+### Step 0: Download the 2010 i2b2/VA Challenge dataset
+
+Follow the instructions on https://www.i2b2.org/NLP/DataSets/ to get your own copy of the 2010 i2b2/VA 2010 Challenge dataset. Then put this data inside the `i2b2_data` folder so that it looks like:
+
+```
+ i2b2_data/
+ |
+  --> 2010/
+      |
+      | --> test/
+      |     |
+      |     | --> concepts/
+      |     |     |
+      |     |      --> *.con
+      |     |
+      |       --> texts/
+      |           |
+      |            --> *.txt
+        --> train/
+            |
+            | --> concepts/
+            |     |
+            |      --> *.con
+            |
+              --> texts/
+                  |
+                   --> *.txt
+```
+
 ### Step 1: Prepare your corpora
 Prepare each corpus you want to train a set of static embeddings on by adding a folder `embeddings/corpora/{corpus_name}/` where `{corpus_name}` is the name of your corpus. Then put your **preprocessed corpus** as a single text file called `corpus.txt` inside that folder.
 
