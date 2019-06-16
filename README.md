@@ -2,7 +2,7 @@
 
 ## Python environment
 
-The code was tested on Linux and Python 3.6. Using Anaconda, install a new environment from the `.yml` file:
+The code was tested on Linux (Ubuntu 16.04.4 LTS) and Python (3.6). Using Anaconda, install a new environment from the `.yml` file:
 
 `conda env create --name ACL_PAPER_env -f=environment.yml`
 
