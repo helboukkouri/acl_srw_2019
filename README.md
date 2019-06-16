@@ -17,7 +17,7 @@ Prepare each corpus you want to train a set of static embeddings on by adding a 
 
 The code comes with a small example corpus from the English Wikipedia in `embeddings/corpora/wiki/`. This is only there as an example and will not result in great performance.
 
-## Step 2: Download & compile embedding codes
+### Step 2: Download & compile embedding codes
 Inside the `embeddings` folder you will also find three other folders called `word2vec`, `glove` and `fasttext`. Each of these folders contrain a shell script called `download_and_compile_code.sh`. You can run this script to download the method's source code and compile it in preparation for the embedding training.
 
 `bash download_and_compile_code.sh`
