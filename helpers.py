@@ -68,7 +68,8 @@ class FastTextEmbeddings():
 
 def load_pretrained_embeddings(vocabulary, embedding, config, logger):
 
-    source, name = embedding.split('_')
+    source = embedding.split('_')[0]
+    name = '_'.join(embedding.split('_')[1:])
     if source == 'word2vec':
         embedding_dir = os.path.join('embeddings/word2vec/pretrained', name)
         embedding_path = os.path.join(embedding_dir, "vectors.bin")

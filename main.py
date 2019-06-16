@@ -5,15 +5,14 @@ from copy import deepcopy
 from helpers import set_seed
 from config import default_config
 from experiment import Experiment
-#from notification.send_mail import notify
 
 
 if __name__ == "__main__":
 
     print(f"\nProcess ID: {os.getpid()}\n")
 
-    N_SEEDS = 1
-    EXPERIMENT_NAME = 'chosen_experiment_name'
+    N_SEEDS = 10
+    EXPERIMENT_NAME = 'example_experiment'
 
     # Parse args as default config
     CONFIG = default_config()
@@ -31,11 +30,11 @@ if __name__ == "__main__":
         ]
 
     CONCATENATIONS_WITH_ELMO = [
-        'elmo_small+fasttext_wiki',
+        'elmo_original+fasttext_wiki',
         ]
 
     MIXTURES_WITH_ELMO = [
-        'elmo_small+fasttext_wiki+mixture',
+        'elmo_pubmed+fasttext_wiki+mixture',
         ]
 
     ALL_EMBEDDINGS = (
@@ -76,12 +75,3 @@ if __name__ == "__main__":
                 config=deepcopy(CONFIG))
 
             experiment.run()
-
-#        if not CONFIG.debug:
-#            notify(experiment_name=EXPERIMENT_NAME)
-
-#    except:
-#        if not CONFIG.debug:
-#            TRACEBACK = traceback.format_exc()
-#            notify(experiment_name=EXPERIMENT_NAME, log=TRACEBACK)
-#        raise
