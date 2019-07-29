@@ -1,5 +1,7 @@
 # Embedding Strategies for Specialized Domains: Application to Clinical Entity Recognition
 
+Paper Link: [https://www.aclweb.org/anthology/papers/P/P19/P19-2041/](https://www.aclweb.org/anthology/papers/P/P19/P19-2041/)
+
 ## Python environment
 
 The code was tested on Linux (Ubuntu 16.04.4 LTS) and Python (3.6). Using Anaconda, install a new environment from the `.yml` file:
